@@ -1,0 +1,106 @@
+$red: #d2222d;
+$yellow: #fffb00bb;
+$dark: #360b0b90;
+.App {
+  background: linear-gradient($yellow, white);
+  min-height: 100vh;
+  height: auto;
+
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  align-items: center;
+}
+.Header {
+  background: $dark;
+  margin-top: 3vh;
+  color: rgb(255, 255, 255);
+  padding: 0px 10px 10px 10px;
+  border-radius: 5%;
+  filter: drop-shadow(10px 10px 10px #000000ad);
+  .inputbar {
+    padding: 0%;
+  }
+  .searchBtn {
+    border: transparent;
+    padding: 1%;
+    border-radius: 50%;
+    background-color: transparent;
+    &:hover {
+      background-color: $red;
+    }
+  }
+}
+
+.lyricsCardGenerator {
+  
+  filter: drop-shadow(20px 10px 20px #00000068);
+ 
+  background-color: $yellow;
+  height: 50vh;
+  width: 70vw;
+  padding: 10%;
+  
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  position: sticky;
+  bottom: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .canclebtn {
+    color: white;
+    width: 8vw;
+    background-color: $red;
+left: 5%;
+position: absolute;
+    border-radius: 50%;
+  }
+  .savebtn {
+    color: white;
+right: 5%;
+position: absolute;
+    background-color: $red;
+    width: 8vw;
+    border-radius: 50%;
+  }
+}
+/*custom menu on selected*/
+.customMenu {
+  color: white;
+  height: auto;
+  margin: 0;
+  /* use absolute positioning  */
+  position: absolute;
+  background-color: $red;
+  box-shadow: 0 0 20px 0 #ccc;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+.lyricsresult {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: whitesmoke;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 20px;
+}
+.lyricsCard {
+
+  background-size: cover;
+  height: 100%;
+  //filter: blur(2px);
+  background-repeat: no-repeat;
+  .lyricslines {
+    padding: 10%;
+    text-align: right;
+    text-decoration: underline;
+    color: #ccc;
+  }
+}
+.btnsflex{
+padding-top: 10px;
+}

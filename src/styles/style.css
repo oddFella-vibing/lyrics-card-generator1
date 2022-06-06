@@ -1,0 +1,132 @@
+.App {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fffb00bb), to(white));
+  background: linear-gradient(#fffb00bb, white);
+  min-height: 100vh;
+  height: auto;
+  font-family: "Courier New", Courier, monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Header {
+  background: #360b0b90;
+  margin-top: 3vh;
+  color: white;
+  padding: 0px 10px 10px 10px;
+  border-radius: 5%;
+  -webkit-filter: drop-shadow(10px 10px 10px #000000ad);
+          filter: drop-shadow(10px 10px 10px #000000ad);
+}
+
+.Header .inputbar {
+  padding: 0%;
+}
+
+.Header .searchBtn {
+  border: transparent;
+  padding: 1%;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.Header .searchBtn:hover {
+  background-color: #d2222d;
+}
+
+.lyricsCardGenerator {
+  -webkit-filter: drop-shadow(20px 10px 20px #00000068);
+          filter: drop-shadow(20px 10px 20px #00000068);
+  background-color: #fffb00bb;
+  height: 50vh;
+  width: 70vw;
+  padding: 10%;
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.lyricsCardGenerator .canclebtn {
+  color: white;
+  width: 8vw;
+  background-color: #d2222d;
+  left: 5%;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.lyricsCardGenerator .savebtn {
+  color: white;
+  right: 5%;
+  position: absolute;
+  background-color: #d2222d;
+  width: 8vw;
+  border-radius: 50%;
+}
+
+/*custom menu on selected*/
+.customMenu {
+  color: white;
+  height: auto;
+  margin: 0;
+  /* use absolute positioning  */
+  position: absolute;
+  background-color: #d2222d;
+  -webkit-box-shadow: 0 0 20px 0 #ccc;
+          box-shadow: 0 0 20px 0 #ccc;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+
+.lyricsresult {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: whitesmoke;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+.lyricsCard {
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.lyricsCard .lyricslines {
+  padding: 10%;
+  text-align: right;
+  text-decoration: underline;
+  color: #ccc;
+}
+
+.btnsflex {
+  padding-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
